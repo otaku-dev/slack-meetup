@@ -19,4 +19,9 @@
 # [[override]]
 #  name = "github.com/x/y"
 #  version = "2.4.0"
-
+[metadata.heroku]
+  root-package = "github.com/otaku-dev/slack-meetup"
+  go-version = "go1.9.4"
+  # install = [ "./cmd/...", "./foo" ]
+  ensure = "true"
+  # additional-tools = ["github.com/mattes/migrate"]
