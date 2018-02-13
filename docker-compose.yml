@@ -1,0 +1,16 @@
+version: '3'
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    command: app
+    environment:
+      DATABASE_HOST: db
+      PORT: 1323
+    volumes:
+      - .:/go/src/app
+    ports:
+      - "1323:1323"
+    depends_on:
+      - db
