@@ -25,3 +25,7 @@
   # install = [ "./cmd/...", "./foo" ]
   ensure = "true"
   # additional-tools = ["github.com/mattes/migrate"]
+
+[[constraint]]
+  name = "github.com/jinzhu/gorm"
+  version = "1.9.0"
