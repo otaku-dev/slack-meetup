@@ -26,7 +26,7 @@ type Channel struct {
 	TeamID  uint
 }
 type Response struct {
-	Text string
+	Text string `json:"text"`
 }
 
 func createTeam(c echo.Context) error {
